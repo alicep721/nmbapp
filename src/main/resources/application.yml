@@ -1,0 +1,21 @@
+server:
+   port: 8000
+spring:
+  profiles:
+    active: dev
+  application:
+    name: nmb-app
+
+############## Logging ##################
+logging:
+  pattern:
+    level: NMB-APP |--> %5p
+  file:
+    name: /data/logs/nmb-app.log
+  level:
+    root: INFO
+    org:
+      springframework:
+        web: INFO
+
+
